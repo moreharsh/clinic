@@ -1,2 +1,3 @@
 # clinic
-website with HTML, CSS, JS
+Frontend: HTML, CSS, JS
+Backend: PHP
