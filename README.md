@@ -1,2 +1,2 @@
 # clinic
-website 
+website with HTML, CSS, JS
