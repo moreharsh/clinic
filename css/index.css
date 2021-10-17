@@ -19,7 +19,7 @@
 
 .loader:before, .loader:after{
   content: '';
-  border: 1em solid #FFD700;
+  border: 1em solid #FFF;
   border-radius: 50%;
   width: inherit;
   height: inherit;
