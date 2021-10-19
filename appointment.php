@@ -17,6 +17,8 @@ if(!empty($fullanme) || !empty($email) ||  !empty($phone) ||  !empty($date) || !
     echo $date;
     echo $time;
     echo $otp;
+    header("Location: index.html");
+
 
 //
 //   $host = "localhost";

@@ -110,7 +110,32 @@
                               <input type="date" name="date" placeholder="Please Select a Date"/>
 
                               <label for="time" class="label">Time Slot*</label>
-                              <input type="time" name="time" placeholder="Select a Slot"/>
+                              <!-- <input type="text" name="time" placeholder="Select a Slot"/> -->
+                              <input type="text" name="time" id="time" placeholder="Select a Slot"/>
+
+                              <div class="time">
+
+                                <div class="row g-1 morningSlot">
+                                    <p class="col-md-2 g-1" id="M1">Morning</p>
+                                    <div class="col-md-5 Mt1">
+                                      <p>08 am - 09 am</p>
+                                    </div>
+                                    <div class="col-md-5 g-1 Mt2">
+                                      <p>09 am - 10 am</p>
+                                    </div>
+                                </div>
+
+                                <div class="row g-0 eveningSlot">
+                                    <p class="col-md-2 g-0" id="E1">Evening</p>
+                                    <div class="col-md-5 g-0 Et1">
+                                      <p>05 pm - 06 pm</p>
+                                    </div>
+                                    <div class="col-md-5 g-0 Et2">
+                                      <p>06 pm - 07 pm</p>
+                                    </div>
+                                </div>
+
+                              </div>
 
                               <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                               <input type="button" name="next" class="next action-button" value="Next"/>
@@ -138,8 +163,8 @@
           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
           <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+          <script  src="./js/appointment.js"></script>
           <script  src="./js/form.js"></script>
-          <!-- <script  src="registration.js"></script> -->
 
   </body>
 </html>
