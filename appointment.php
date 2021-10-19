@@ -1,63 +1,65 @@
 <?php
 
 
-$fullanme = $_POST['fullname'];
+$fullname = $_POST['fullname'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $date = $_POST['date'];
 $time = $_POST['time'];
 $otp = $_POST['otp'];
 
-if(!empty($fullanme) || !empty($email) ||  !empty($phone) ||  !empty($date) || !empty($time) || !empty($otp) ) {
+if(!empty($fullname) || !empty($email) ||  !empty($phone) ||  !empty($date) || !empty($time) || !empty($otp) ) {
 
-    echo "OK";
-    echo $fullanme;
-    echo $email;
-    echo $phone;
-    echo $date;
-    echo $time;
-    echo $otp;
-    header("Location: appointment_confirm.html");
+    // header("Location: appointment_confirm.html");
+
+    $host = "localhost";
+    $dbUsername = "root";
+    $password = "";
+    $dbname = "appointment";
+
+    $conn = new mysqli($host, $dbUsername, $password, $dbname);
+
+    if(mysqli_connect_error()) {
+      die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
+    } else {
+      $SELECT = "SELECT email FROM appointment WHERE email = ? Limit 1";
+      $INSERT = "INSERT INTO appointment (fullname, email, phone, booking_date, booking_time) values (?, ?, ?, ?, ?)";
+
+      $stmt = $conn->prepare($SELECT);
+      $stmt->bind_param("s",$email);
+      $stmt->execute();
+      $stmt->bind_result($email);
+      $stmt->store_result();
+      $rnum = $stmt->num_rows;
+
+      if($rnum == 0) {
+        $stmt->close();
+
+        $stmt = $conn->prepare($INSERT);
+        $stmt->bind_param("sssss",$fullname,$email,$phone,$date,$time);
+        $stmt->execute();
+        header("Location: appointment_confirm.html");
+      } else {
+        echo "Appointment Already Booked <br>";
+        $query = "SELECT * FROM appointment";
+        $data = mysqli_query($conn, $query);
+
+        $count0 = 0;
+
+        while (($result = mysqli_fetch_assoc($data))) {
+            echo $result['fullname'] . "  " . $result['email'] . "   " . $result['phone'] . "   " . $result['booking_date'] . "   " . $result['booking_time'], "<br>";
+            // if($result['booking_time'])
+            // {
+            //
+            // }
+        }
+      }
+      $stmt->close();
+      $conn->close();
+
+    }
 
 
-//
-//   $host = "localhost";
-//   $dbUsername = "root";
-//   $password = "";
-//   $dbname = "form";
-//
-//   $conn = new mysqli($host, $dbUsername, $password, $dbname);
-//
-//   if(mysqli_connect_error()) {
-//     die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
-//   } else {
-//     $SELECT = "SELECT email FROM form WHERE email = ? Limit 1";
-//     $INSERT = "INSERT INTO form (firstname, lastname, college, branch, member,
-//       email, phone) values (?, ?, ?, ?, ?, ?, ?)";
-//
-//     $stmt = $conn->prepare($SELECT);
-//     $stmt->bind_param("s",$email);
-//     $stmt->execute();
-//     $stmt->bind_result($email);
-//     $stmt->store_result();
-//     $rnum = $stmt->num_rows;
-//
-//     if($rnum == 0) {
-//       $stmt->close();
-//
-//       $stmt = $conn->prepare($INSERT);
-//       $stmt->bind_param("ssssssi",$firstname,$lastname,$college,$branch,$member,$email,$phone);
-//       $stmt->execute();
-//       header("Location: form.html");
-//     } else {
-//       echo "User Already Exists";
-//     }
-//     $stmt->close();
-//     $conn->close();
-//
-//   }
-//
-//
 } else {
   echo "All Field are Required!";
   die();

@@ -12,22 +12,22 @@ $("#time").click(function(){
 });
 
 $(".Mt1").click(function(){
-    $("#time").val("08 pm - 09 pm ");
+    $("#time").val("08 pm - 09 pm");
     $(".time").css("display", "none");
 });
 
 $(".Mt2").click(function(){
-    $("#time").val("09 pm - 10 pm ");
+    $("#time").val("09 pm - 10 pm");
     $(".time").css("display", "none");
 });
 
 $(".Et1").click(function(){
-    $("#time").val("05 pm - 06 pm ");
+    $("#time").val("05 pm - 06 pm");
     $(".time").css("display", "none");
 });
 
 $(".Et2").click(function(){
-    $("#time").val("06 pm - 07 pm ");
+    $("#time").val("06 pm - 07 pm");
     $(".time").css("display", "none");
 });
 
