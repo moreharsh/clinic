@@ -13,7 +13,7 @@ body{
 /* Left side Start */
 
 .leftside{
-  background-image: url('../images/left_back.jpg');
+  background-image: url('../images/left_back.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,13 +65,11 @@ body{
 /* Right side Start */
 
 .rightside{
-  background: transparent;
-  background-color: #FFF;           /* Add backgrond image here */
-  /* background-image: url(pattern.jpg);
-  background-position: center;
+  background-image: url('../images/right_back.png');
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%; */
+  width: 100%;
 }
 
 /* Back Button Start */
