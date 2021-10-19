@@ -30,3 +30,10 @@ $(".Et2").click(function(){
     $("#time").val("06 pm - 07 pm ");
     $(".time").css("display", "none");
 });
+
+
+// OTP send Button
+$(".send").click(function(){
+    $(".send").css("display", "none");
+    $(".resend").css("display", "inline");
+});
