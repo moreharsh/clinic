@@ -77,7 +77,7 @@ body{
 /* Back Button Start */
 .rightside .goback{
   font-size: 20px;
-  padding: 5% 10%;
+  padding: 5% 5%;
   width: 50%;
   display: -webkit-box;
   align-items: center;
@@ -177,7 +177,7 @@ body{
 
 
     .rightside .goback{
-        padding-top: 2%;
+        padding-top: 1%;
     }
     .rightside .steps{
         padding-top: 2%;

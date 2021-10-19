@@ -85,21 +85,25 @@
                               <hr class="hline">
 
                               <label for="fullanme" class="label">Your Full Name*</label>
-                              <input type="text" name="fullname" placeholder="Enter your name"/>
+                              <input type="text" name="fullname" class="fullname" placeholder="Enter your name" required />
+                              <span id="error_fullname" class="text-danger" style=""></span>
 
                               <label for="email" class="label">Email address*</label>
-                              <input type="email" name="email" placeholder="Enter email address"/>
+                              <input type="email" name="email" class="email" placeholder="Enter email address"/>
+                              <span id="error_email" class="text-danger" style=""></span>
 
                               <label for="phone" class="label">Phone Number*</label>
-                              <input type="text" name="phone" placeholder="Enter phone number"/>
+                              <input type="text" name="phone" class="phone" placeholder="Enter phone number"/>
+                              <span id="error_phone" class="text-danger" style=""></span>
 
                               <div class="check">
                                 <input type="checkbox" id="checkbox" name="checkbox" style="width: 50px; height: 15px; padding-top: 5px; margin-top: 7px;">
                                 <label for="checkbox" class="checklabel" style="padding-top: 3px;">I agree to terms & conditions*</label>
+                                <span id="error_checkbox" class="text-danger" style=""></span>
                               </div>
 
 
-                              <input type="button" name="next" class="next action-button" value="Next"/>
+                              <input type="button" name="next" id="next1" class="next action-button" value="Next"/>
                           </fieldset>
                           <fieldset>
                               <h2 class="fs-title">Complete Your Booking</h2>
@@ -107,11 +111,13 @@
                               <hr class="hline">
 
                               <label for="date" class="label">Date*</label>
-                              <input type="date" name="date" placeholder="Please Select a Date"/>
+                              <input type="date" class="date" name="date" placeholder="Please Select a Date"/>
+                              <span id="error_date" class="text-danger" style=""></span>
 
                               <label for="time" class="label">Time Slot*</label>
                               <!-- <input type="text" name="time" placeholder="Select a Slot"/> -->
                               <input type="" name="time" id="time" placeholder="Select a Slot"/>
+                              <span id="error_time" class="text-danger" style=""></span>
 
                               <div class="time">
 
@@ -138,7 +144,7 @@
                               </div>
 
                               <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                              <input type="button" name="next" class="next action-button" value="Next"/>
+                              <input type="button" id="next2" name="next" class="next action-button" value="Next"/>
                           </fieldset>
                           <fieldset>
                               <h2 class="fs-title">OTP Step Away!</h2>
@@ -148,7 +154,8 @@
                               <hr class="hline">
 
                               <label for="otp" class="label">Enter the OTP*</label>
-                              <input type="otp" name="otp" placeholder="Enter the OTP"/>
+                              <input type="otp" name="otp" class="otp" placeholder="Enter the OTP" required/>
+                              <span id="error_otp" class="text-danger" style=""></span>
 
                               <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                               <input type="submit" name="submit" id="btn_contact_details" class="submit action-button" value="Submit"/>
@@ -163,8 +170,10 @@
           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
           <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
           <script  src="./js/appointment.js"></script>
           <script  src="./js/form.js"></script>
+
 
   </body>
 </html>
