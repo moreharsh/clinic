@@ -1,5 +1,6 @@
 /*custom font*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
 
 /*basic reset*/
 * {
@@ -8,7 +9,7 @@
 }
 
 body {
-    font-family: montserrat, arial, verdana;
+  font-family: 'Inter', sans-serif;
 }
 
 /*form styles*/
@@ -22,8 +23,8 @@ body {
     background: white;
     border: 0 none;
     border-radius: 10px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.05);
+    padding: 50px 50px;
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
@@ -45,15 +46,15 @@ body {
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
+    font-family: 'Inter';
+    color: #696F79;
     font-size: 13px;
 }
 
 #msform input:focus, #msform select:focus, #msform textarea:focus {
     /* -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important; */
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05);
     border: 2px solid #E77E83;
     outline-width: 0;
     transition: All 0.5s ease-in;
@@ -213,16 +214,16 @@ body {
 /*headings*/
 .fs-title {
     font-size: 18px;
-    color: #2C3E50;
+    color: #696F79;
     margin-bottom: 10px;
-    letter-spacing: 2px;
     font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .fs-subtitle {
     font-weight: normal;
     font-size: 13px;
-    color: #666;
+    color: #696F79;
     margin-bottom: 20px;
 }
 
@@ -236,7 +237,7 @@ body {
 
 #progressbar li {
     list-style-type: none;
-    color: #8692A6;
+    color: #696F79;
     font-size: 14px;
     width: 33.33%;
     float: left;
@@ -257,7 +258,7 @@ body {
     display: block;
     font-size: 12px;
     color: #FFF;
-    background: #8692A6;
+    background: #E5E5E5;
     border-radius: 25px;
     margin: 0 auto 10px auto;
 }
@@ -267,7 +268,7 @@ body {
     content: '';
     width: 91%;
     height: 2px;
-    background: #8692A6;
+    background: #E5E5E5;
     position: absolute;
     left: -40%;
     top: 9px;

@@ -22,13 +22,13 @@ if(!empty($fullname) || !empty($email) ||  !empty($phone) ||  !empty($date) || !
     if(mysqli_connect_error()) {
       die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
     } else {
-      $SELECT = "SELECT email FROM appointment WHERE email = ? Limit 1";
+      $SELECT = "SELECT booking_date FROM appointment WHERE booking_date = ? Limit 1";
       $INSERT = "INSERT INTO appointment (fullname, email, phone, booking_date, booking_time) values (?, ?, ?, ?, ?)";
 
       $stmt = $conn->prepare($SELECT);
-      $stmt->bind_param("s",$email);
+      $stmt->bind_param("ss",$date, $time);
       $stmt->execute();
-      $stmt->bind_result($email);
+      $stmt->bind_result($date, $time);
       $stmt->store_result();
       $rnum = $stmt->num_rows;
 
@@ -41,18 +41,15 @@ if(!empty($fullname) || !empty($email) ||  !empty($phone) ||  !empty($date) || !
         header("Location: appointment_confirm.html");
       } else {
         echo "Appointment Already Booked <br>";
-        $query = "SELECT * FROM appointment";
-        $data = mysqli_query($conn, $query);
-
-        $count0 = 0;
-
-        while (($result = mysqli_fetch_assoc($data))) {
-            echo $result['fullname'] . "  " . $result['email'] . "   " . $result['phone'] . "   " . $result['booking_date'] . "   " . $result['booking_time'], "<br>";
-            // if($result['booking_time'])
-            // {
-            //
-            // }
-        }
+        // $query = "SELECT * FROM appointment";
+        // $data = mysqli_query($conn, $query);
+        //
+        // $count0 = 0;
+        //
+        // while (($result = mysqli_fetch_assoc($data))) {
+        //     echo $result['fullname'] . "  " . $result['email'] . "   " . $result['phone'] . "   " . $result['booking_date'] . "   " . $result['booking_time'], "<br>";
+        //
+        // }
       }
       $stmt->close();
       $conn->close();

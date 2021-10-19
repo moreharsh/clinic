@@ -134,7 +134,7 @@ $("#next2").click(function(){
 	if($("#time").val() == '')
 	{
 		$("#time").css("background-color","#E5E5E5");
-		error_time = 'Date is required';
+		error_time = 'Time Slot is required';
 		$('#error_time').text(error_time);
 	}
 	else

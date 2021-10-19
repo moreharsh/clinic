@@ -31,7 +31,6 @@ $(".Et2").click(function(){
     $(".time").css("display", "none");
 });
 
-
 // OTP send Button
 $(".send").click(function(){
     $(".send").css("display", "none");

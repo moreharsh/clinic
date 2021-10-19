@@ -1,7 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .leftside, .rightside{
@@ -83,12 +82,12 @@ body{
 
 .rightside .goback i{
   cursor: pointer;
-  color: #000000;
+  color: #252641;
 }
 
 .rightside .goback h4{
   padding-left: 15px;
-  color: #000000;
+  color: #252641;
 }
 
 /* Back Button End */
