@@ -4,14 +4,15 @@
 }
 
 .footer__title{
-  font-size: 18px;
+  width: 300px;
+  font-size: 16px;
   margin: 0;
   margin-left: 0px;
   margin-left: 10px;
   display: inline-block;
   line-height: 18px;
   vertical-align: middle;
-  color:#3a9fff;
+  color:#F3F3F3;
 }
 
 .footer__light{
@@ -41,7 +42,10 @@
     width: 15px;
   }
   .footer__title {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 5px;
+  }
+  .footer__social-l {
+      margin-left: 15px;
   }
 }
