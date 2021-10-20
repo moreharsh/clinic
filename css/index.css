@@ -51,17 +51,234 @@
 /* Preloader End */
 
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
-.banner{
-  text-align: center;
+.sect{
+  width: 100%;
+  height: 80vh;
+  /* background: red; */
+}
+
+/* Left Image Start */
+.leftside{
+  width: 80%;
+  height: 500px;
+  /* background: blue; */
+  margin-left: 20%;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.leftside h1{
+  font-size: 45px;
+  margin-left: 10%;
+  margin-top: 5%;
+  color: #2F327D;
+}
+
+.leftside h3{
+  font-size: 24px;
+  margin-left: 10%;
+  margin-top: 0;
+  color: #18191F;
+}
+
+.leftside h2{
+  font-size: 22px;
+  margin-left: 10%;
+  margin-top: 8%;
+  color: #E77E83;
+}
+
+.leftside i{
   font-size: 40px;
-  font-weight: bold;
-  padding-top: 45vh;
+  margin-left: 5%;
+  margin-top: 6%;
+  color: #E77E83;
+}
+
+.leftside p{
+  font-size: 22px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  color: #696984;
+}
+
+.leftside .btn{
+  width: 70%;
+  height: 50px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background: #61C0BF;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Left Image End */
+
+/* Right Image Start */
+
+.rightside{
+  width: 60%;
+  height: 500px;
+  background-image: url('../images/left_back.png');
+  background-size: cover;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Right Image End */
+
+
+/* Down Part Start */
+.sect1{
+  width: 100%;
+  height: 80vh;
+  /* background: red; */
+}
+
+
+.downleftside{
+  width: 80%;
+  height: 500px;
+  /* background: blue; */
+  margin-left: 20%;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.downleftside h1{
+  font-size: 45px;
+  margin-left: 10%;
+  margin-top: 5%;
+  color: #2F327D;
+}
+
+.downleftside .clinic{
+  width: 70%;
+  height: 300px;
+  background-image: url('../images/left_back.png');
+  background-size: cover;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.downleftside p{
+  width: 60%;
+  font-size: 22px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  color: #696984;
+}
+/* Left Image End */
+
+/* Down Right Map Start */
+
+.downrightside{
+  width: 80%;
+  height: 430px;
+  background-image: url('../images/left_back.jpg');
+  background-size: cover;
+  margin-top: 15%;
+  margin-left: 5%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Down Right Map End */
+
+/* Down Part End */
+
+
+/* Mobile View Starts */
+@media screen and (max-width:1024px){
+  .loader_bg{
+    width: 100%;
+    height: 100%;
+  }
+  .sect{
+    width: 100%;
+    height: 200vh;
+    /* padding-top: 30%; */
+  }
+  .leftside{
+    width: 100%;
+    height: 650px;
+    margin-left: 0;
+    margin-top: 30%;
+  }
+  .leftside h1{
+    font-size: 32px;
+  }
+  .leftside h3{
+    font-size: 20px;
+  }
+  .leftside p{
+    font-size: 16px;
+  }
+  .leftside .btn{
+    margin-top: 10%;
+  }
+
+
+  .rightside{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -50%;
+    background-size: cover;
+  }
+
+
+  .sect1{
+    width: 100%;
+    height: 115vh;
+    margin-top: 30%;
+  }
+
+  .downleftside{
+    width: 100%;
+    height: 650px;
+    margin-left: 0;
+    margin-top: -100%;
+  }
+  .downleftside h1{
+    font-size: 32px;
+    margin-left: 30%;
+  }
+  .downleftside p{
+    font-size: 16px;
+  }
+
+  .downrightside{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -30%;
+    background-size: cover;
+  }
+
+
 }
