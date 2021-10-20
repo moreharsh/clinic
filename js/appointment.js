@@ -1,5 +1,4 @@
 $("#time").click(function(){
-    console.log("Click");
     var box = $(".time");
 
     if($(".time").css("display") == "none")

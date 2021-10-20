@@ -172,6 +172,35 @@
           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
           <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
+          <!-- Slot management code Start  -->
+          <script type="text/javascript">
+          $('#next2').click(function()
+          {
+            var date = $(".date").val();
+            var time = $("#time").val();
+
+            console.log("Clicked");
+            $.ajax
+            ({
+              type: "POST",
+              url: "check_availability.php",
+              dataType: "json",
+              data: {date:date,time:time},
+              success: function(msg)
+              {
+                  if(msg.status == 'err')
+                  {
+                    alert( msg.message );
+                    window.location.href='appointment.html';
+                  }
+              }
+            });
+            return false;
+          });
+          </script>
+
+          <!-- Slot management code End  -->
+
           <script  src="./js/appointment.js"></script>
           <script  src="./js/form.js"></script>
 
