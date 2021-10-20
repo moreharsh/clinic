@@ -107,6 +107,7 @@ body{
   margin-left: 5%;
   margin-top: 6%;
   color: #E77E83;
+  cursor: pointer;
 }
 
 .leftside p{
@@ -126,6 +127,7 @@ body{
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  cursor: pointer;
 }
 
 /* Left Image End */
