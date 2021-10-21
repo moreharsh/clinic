@@ -69,7 +69,7 @@ body{
 
 .sect{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   /* background: red; */
 }
 
@@ -230,7 +230,7 @@ body{
   }
   .sect{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden !important;
     /* padding-top: 30%; */
   }
@@ -253,7 +253,6 @@ body{
     margin-top: 10%;
   }
 
-
   .rightside{
     /* width: 90%;
     margin-left: 5%;
@@ -261,7 +260,6 @@ body{
     background-size: cover; */
     display: none;
   }
-
 
   .sect1{
     width: 100%;
@@ -293,4 +291,57 @@ body{
     width: 100%;
   }
 
+}
+
+@media screen and (max-width:480px){
+  .sect{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden !important;
+    /* padding-top: 30%; */
+  }
+
+  .sect1{
+    width: 100%;
+    height: 140vh;
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width:380px){
+  .sect{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden !important;
+    /* padding-top: 30%; */
+  }
+  .sect1{
+    width: 100%;
+    height: 160vh;
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width:340px){
+  .sect{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden !important;
+    /* padding-top: 30%; */
+  }
+  .leftside h1{
+    font-size: 28px;
+  }
+  .leftside h3{
+    font-size: 18px;
+  }
+  .leftside p{
+    font-size: 14px;
+  }
+
+  .sect1{
+    width: 100%;
+    height: 180vh;
+    overflow: hidden !important;
+  }
 }
