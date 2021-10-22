@@ -5,7 +5,8 @@
 
 /*menu header*/
 .header{
-  padding: 20px 25px;
+  padding: 0 25px;
+  padding-top: 30px;
   background: #FFFFFF;
 }
 .header__elenco {
@@ -21,20 +22,18 @@
     display: inline-block;
 }
 .header__img{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.header__logo, .header__menu{
-  display: inline-block;
-  vertical-align: middle;
-}
-.header__title{
   font-size: 18px;
   margin: 0;
   margin-left: 10px;
   display: inline-block;
   line-height: 18px;
+  vertical-align: middle;
+  width: 80px;
+  /* height: 100px; */
+}
+
+.header__logo, .header__menu{
+  display: inline-block;
   vertical-align: middle;
 }
 

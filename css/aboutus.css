@@ -6,6 +6,10 @@ body{
    padding:0;
    font-family: 'Inter', sans-serif;
    position:relative;
+   background-image: url('../images/About_Background.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .goback{
@@ -40,7 +44,6 @@ body{
 .mission{
    width:100%;
    height:auto;
-   background-color:#fff;
 }
 .mission .right{
    padding:2% 0;
@@ -53,17 +56,10 @@ body{
    display:inline-block;
 }
 .mission .left img{
+    height: 350px;
+    width: 350px;
     margin-top: 10%;
     margin-left: 20%;
-    width: 80%;
-}
-.mission .left h3{
-    margin-left: 45%;
-    color: #696984;
-}
-.mission .left h4{
-    margin-left: 45%;
-    color: #E77E83;
 }
 .mission .right h1{
   color: #494949;
@@ -81,7 +77,6 @@ body{
 .about{
    width:100%;
    height:auto;
-   background-color:#fff;
 }
 .about .left{
    padding:2% 0;
@@ -94,19 +89,12 @@ body{
    display:inline-block;
 }
 .about .right img{
+    height: 350px;
+    width: 200px;
     margin-top: 10%;
-    margin-right: 20%;
-    width:80%
+    margin-left: 20%;
 }
 
-.about .right h3{
-    margin-left: 25%;
-    color: #9F5069;
-}
-.about .right h4{
-    margin-left: 25%;
-    color: #696984;
-}
 
 .about .left p{
    color: #696984;
@@ -121,7 +109,6 @@ body{
 .mission1{
    width:100%;
    height:auto;
-   background-color:#fff;
 }
 .mission1 .right{
    padding:2% 0;
@@ -135,24 +122,38 @@ body{
    display:inline-block;
 }
 .mission1 .left img{
+  height: 400px;
+  width: 400px;
   margin-top: 10%;
-  margin-left: 20%;
-   width:80%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+}
+
+.mission1 .right .bullet{
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  flex-wrap: nowrap;
 }
 
 .mission1 .right p{
   color: #696984;
-   font-size: 20px;
-   margin:40px auto;
+   font-size: 18px;
+   margin: 0px auto;
    width:80%;
    padding-right: 5%;
 }
 
-.mission1 .right p > i{
-  font-size: 30px;
-  color: #E77E83;
-  padding-right: 5%;
+.mission1 .right .bullet p{
+   margin: 0 0;
 }
+
+.mission1 .right img{
+  margin-top: 2%;
+  height: 100px;
+  width: 100px;
+}
+
 
 .clear{
     clear: both;
@@ -176,7 +177,7 @@ body{
       font-size: 18px;
       margin:20px auto;
    }
-   .mission1 .right p > i{
+   .mission1 .right img{
      font-size: 18px;
    }
    .about .left p{
@@ -194,16 +195,6 @@ body{
 
   .mission .left{
     display: none;
-  }
-  .about .right img{
-    margin-left: 10%;
-    margin-right: -10%;
-  }
-  .about .right h3{
-    margin-left: 10%;
-  }
-  .about .right h4{
-    margin-left: 10%;
   }
   .mission1 .left{
     display: none;
@@ -239,13 +230,14 @@ body{
    width:100%;
 }
    .mission1 .right{
+   margin-top: 5%;
    width:100%;
 }
 .mission1 .right p{
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 0;
 }
-.mission1 .right p > i{
+.mission1 .right img{
   font-size: 20px;
 }
 }
