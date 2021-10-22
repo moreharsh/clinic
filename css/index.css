@@ -297,6 +297,7 @@ body{
   .sect{
     width: 100%;
     height: 80vh;
+    padding-left: 5%;
     overflow: hidden !important;
     /* padding-top: 30%; */
   }
@@ -304,6 +305,7 @@ body{
   .sect1{
     width: 100%;
     height: 140vh;
+    padding-left: 5%;
     overflow: hidden !important;
   }
 }
@@ -340,6 +342,7 @@ body{
   }
 
   .sect1{
+    padding-left: 5%;
     width: 100%;
     height: 180vh;
     overflow: hidden !important;

@@ -50,6 +50,10 @@
   color: #E77E83;
 }
 
+.active{
+  color: #E77E83;
+}
+
 .navbar-toggle .icon-bar{
   background-color: #8198ae;
 }
