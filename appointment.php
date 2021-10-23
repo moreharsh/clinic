@@ -64,7 +64,7 @@ if(!empty($fullname) || !empty($email) ||  !empty($phone) ||  !empty($date) || !
         $stmt->store_result();
         $rnum = $stmt->num_rows;
 
-        if($rnum == 0) {
+        if($rnum <= 3) {
           $stmt->close();
 
           $stmt = $conn->prepare($INSERT);

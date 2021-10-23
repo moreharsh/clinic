@@ -38,7 +38,7 @@
           $stmt->close();
       }
 
-      if($count)
+      if($count >= 3)
       {
           $msg['message'] = "Sorry, selected slot is not Available! \nPlease select some other slot.";
           $msg['status'] = 'err';
