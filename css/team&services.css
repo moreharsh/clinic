@@ -113,6 +113,29 @@ body{
     clear: both;
 }
 
+.midtext{
+  position: relative;
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.midtext h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: #2F327D;
+}
+
+.midtext p{
+  font-size: 24px;
+  color: #696984;
+}
+
 #msform {
     position: relative;
     margin-top: 5%;
@@ -154,16 +177,68 @@ body{
   padding: 0 30px;
 }
 
-.carousel .card{
-  line-height: 500px;
-  text-align: center;
+.carousel .cardbox .card{
+  height: 600px;
   color: #696984;
-  font-size: 90px;
-  font-weight: 600;
-  margin: 20px 0;
+  margin: 20px 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 0 0;
 }
+
+.carousel .cardbox .card h2{
+  padding-top: 10%;
+}
+
+.carousel .cardbox .card h2, .carousel .cardbox .card p{
+  text-align: center;
+  width: 60%;
+  margin: 5% 20%;
+  color: #834655;
+}
+
+.carousel .cardbox .card ul{
+  width: 80%;
+  margin-left: 5%;
+}
+
+.carousel .cardbox .card li{
+  margin-top: 1%;
+}
+
+.carousel .cardbox .card:hover{
+    border: 2px solid #834655;
+}
+
+.carousel .cardbox > img{
+  width: 150px;
+  height: 150px;
+  margin-bottom: -20%;
+  margin-left: 35%;
+}
+
+.owl-nav{
+  color: #834655;
+  font-size: 55px;
+  height: 60px;
+  width: 40px;
+  text-align: center;
+}
+
+.owl-prev, .owl-next {
+    position:absolute;
+ }
+
+.owl-prev {
+    left: -30px;
+    top: 40%;
+    font-size: 24px;
+ }
+
+ .owl-next {
+    right: -30px;
+    top: 40%;
+ }
 
 
 /* media */
@@ -175,6 +250,9 @@ body{
 }
 
 @media(max-width:768px){
+  .owl-nav{
+    display: none;
+  }
   .goback{
       padding-top: 25%;
   }
@@ -209,4 +287,101 @@ body{
   margin-left: auto;
 }
 
+.carousel .cardbox .card{
+  height: 700px;
+}
+.carousel .cardbox .card h2{
+  padding-top: 15%;
+}
+
+.carousel .cardbox .card h2, .carousel .cardbox .card p{
+  width: 90%;
+  margin-left: 5%;
+}
+}
+
+@media(max-width: 1050px){
+  .carousel .cardbox > img{
+    margin-bottom: -25%;
+    margin-left: 35%;
+  }
+}
+
+@media(max-width: 1000px){
+  .carousel .cardbox > img{
+    margin-bottom: -10%;
+    margin-left: 40%;
+  }
+}
+
+@media(max-width: 950px){
+  .carousel .cardbox > img{
+    margin-bottom: -13%;
+    margin-left: 40%;
+  }
+}
+
+@media(max-width: 850px){
+  .carousel .cardbox > img{
+    margin-bottom: -15%;
+    margin-left: 40%;
+  }
+}
+
+@media(max-width: 760px){
+  .carousel .cardbox > img{
+    margin-bottom: -18%;
+    margin-left: 40%;
+  }
+}
+
+@media(max-width: 650px){
+  .carousel .cardbox > img{
+    margin-bottom: -20%;
+    margin-left: 35%;
+  }
+}
+
+@media(max-width: 600px){
+  .carousel .cardbox > img{
+    margin-bottom: -23%;
+    margin-left: 35%;
+  }
+}
+
+
+@media(max-width: 550px){
+  .carousel .cardbox > img{
+    margin-bottom: -25%;
+    margin-left: 30%;
+  }
+}
+
+
+@media(max-width: 500px){
+  .carousel .cardbox > img{
+    margin-bottom: -28%;
+    margin-left: 30%;
+  }
+}
+
+@media(max-width: 460px){
+  .carousel .cardbox > img{
+    margin-bottom: -30%;
+    margin-left: 30%;
+  }
+}
+
+@media(max-width: 400px){
+  .carousel .cardbox > img{
+    margin-bottom: -35%;
+    margin-left: 30%;
+  }
+}
+
+@media(max-width:380px){
+  .carousel .cardbox > img{
+    margin-bottom: -40%;
+    margin-left: 25%;
+  }
 }
