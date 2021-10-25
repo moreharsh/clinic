@@ -8,6 +8,7 @@
   padding: 0 25px;
   padding-top: 30px;
   background: #FFFFFF;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
 .header__elenco {
     padding: 0;
