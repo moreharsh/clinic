@@ -3,7 +3,7 @@ setTimeout(function () {
 }, 5000);
 
 $(".btn").click(function(){
-	window.location.href='appointment.html';
+	window.location.href='book_appointment.html';
 });
 
 $("#tour").click(function(){
