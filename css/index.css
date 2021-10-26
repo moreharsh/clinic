@@ -65,6 +65,10 @@ body{
   padding: 0;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden !important;
+  background-image: url('../images/about/About_Background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sect{
@@ -213,7 +217,9 @@ body{
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
-
+.downrightside iframe{
+  width: 100%;
+}
 /* Down Right Map End */
 
 /* Down Part End */
@@ -286,11 +292,6 @@ body{
     margin-top: -30%;
     background-size: cover;
   }
-
-  .downrightside iframe{
-    width: 100%;
-  }
-
 }
 
 @media screen and (max-width:480px){
