@@ -72,6 +72,8 @@ body{
    margin:40px auto;
    width:80%;
    padding-right: 10%;
+   line-height: 198%;
+   letter-spacing: 2%;
 }
 
 .about{
@@ -102,8 +104,8 @@ body{
    margin: 40px auto;
    width: 80%;
    padding: 5% 10%;
-   /* padding-right: 15%; */
-   /* padding-right: 15%; */
+   line-height: 198%;
+   letter-spacing: 2%;
 }
 
 .mission1{
@@ -122,10 +124,9 @@ body{
    display:inline-block;
 }
 .mission1 .left img{
-  height: 400px;
-  width: 400px;
-  margin-top: 10%;
-  margin-left: 15%;
+  height: 350px;
+  width: 350px;
+  margin-left: 25%;
   margin-bottom: 10%;
 }
 
@@ -196,8 +197,11 @@ body{
   .mission .left{
     display: none;
   }
-  .mission1 .left{
-    display: none;
+  .mission1 .left img{
+      height: 250px;
+      width: 250px;
+      margin-top: 5%;
+      margin-left: 15%;
   }
 
    .about .left{
