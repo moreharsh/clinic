@@ -57,7 +57,7 @@ body{
    box-sizing: border-box;
    font-weight: bold;
    margin-top: 5%;
-   margin-left: 0;
+   margin-left: 5%;
    padding-bottom: 3%;
 }
 
@@ -100,7 +100,9 @@ body{
   color: #696984;
    font-size: 20px;
    margin:40px auto;
-   width:80%;
+   width: 75%;
+   line-height: 180%;
+   letter-spacing: 2%;
 }
 
 .clear{
@@ -168,7 +170,7 @@ body{
 }
 
 .grid li {
- width: 380px;
+ width: 340px;
  height: 280px;
  display: inline-block;
  margin: 20px;
