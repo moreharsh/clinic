@@ -3,8 +3,8 @@ margin: 10,
 loop: true,
 nav: true,
 navText: [
-  "<i class='fa fa-caret-left'></i>",
-  "<i class='fa fa-caret-right'></i>"
+  "<i class='fa fa-angle-left'></i>",
+  "<i class='fa fa-angle-right'></i>"
 ],
 autoplay: true,
 autoplayTimeout: 5000,
