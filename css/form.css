@@ -68,9 +68,11 @@ body {
 }
 
 .label{
+  color: #696F79;
   display: flex;
   padding: 5px 2px;
   font-size: 14px;
+  font-weight: normal;
 }
 
 .text-danger{

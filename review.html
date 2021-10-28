@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://raw.githubusercontent.com/kartik-v/bootstrap-star-rating/master/css/star-rating.min.css'>
+
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/review.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+
+<body>
+
+<header class="header">
+  <div class="container header__container">
+    <div class="header__logo"><img class="header__img" src="images/Logo.png">
+      <!-- <h1 class="header__title">Bricks<span class="header__light">.io</span></h1> -->
+    </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+  <div class="header__menu">
+    <nav id="navbar" class="header__nav collapse">
+      <ul class="header__elenco">
+        <li class="header__el"><a href="aboutus.html" class="header__link">About Us</a></li>
+        <li class="header__el"><a href="team&services.html" class="header__link">Team & Services</a></li>
+        <li class="header__el"><a href="facilities.html" class="header__link">Facilities</a></li>
+        <li class="header__el"><a href="contact.html" class="header__link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+    </div>
+</header>
+
+<!-- About us Start -->
+<div class="goback">
+  <a href="index.html"> <i class="fa fa-chevron-left"></i></a>
+  <h4><a href="index.html" style="color:#696984; cursor:pointer;">Back</a></h4>
+</div>
+
+<div class="container1">
+
+  <div class="mission">
+
+     <div class="left">
+      <h1>Your Review</h1>
+        <img src="images/left_back.png">
+     </div>
+       <div class="right">
+         <form id="msform" method="post" action="#" style="margin-top: 0;">
+             <!-- fieldsets -->
+             <fieldset>
+                 <label for="fullanme" class="label">Your Full Name*</label>
+                 <input type="text" name="fullname" class="fullname" placeholder="Enter your name" required />
+
+                 <label for="address" class="label">Your Review</label>
+                 <textarea type="text" name="address" rows="3" placeholder="Enter Text Here"></textarea>
+
+                 <div class="rateus">
+                   <h3>Leave A Rating </h3>
+                   <div class="star-rating">
+                    <span class="fa fa-star-o" data-rating="1"></span>
+                    <span class="fa fa-star-o" data-rating="2"></span>
+                    <span class="fa fa-star-o" data-rating="3"></span>
+                    <span class="fa fa-star-o" data-rating="4"></span>
+                    <span class="fa fa-star-o" data-rating="5"></span>
+                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                  </div>
+                 </div>
+
+                 <input type="submit" name="submit" id="btn_contact_details" class="submit action-button" value="Submit"/>
+             </fieldset>
+         </form>
+     </div>
+     <div class="clear"></div>
+
+  </div>
+
+</div>
+
+<div style="height:20vh;">
+
+</div>
+
+<!-- About us End -->
+
+<!-- Site footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">&copy; Align Dental Studio
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="footer-social-icon">
+                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fab fa-youtube google-bg"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script type="text/javascript">
+    var $star_rating = $('.star-rating .fa');
+    var SetRatingStar = function() {
+      return $star_rating.each(function() {
+        if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+          return $(this).removeClass('fa-star-o').addClass('fa-star');
+        } else {
+          return $(this).removeClass('fa-star').addClass('fa-star-o');
+        }
+      });
+    };
+
+    $star_rating.on('click', function() {
+      $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+      return SetRatingStar();
+    });
+
+    $(".submit").click(function(){
+      SetRatingStar();
+    });
+    // $(document).ready(function() {
+    //
+    // });
+  </script>
+
+</body>
+</html>
