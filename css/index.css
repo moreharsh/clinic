@@ -71,159 +71,231 @@ body{
   background-size: cover;
 }
 
-.sect{
+.banner{
   width: 100%;
-  height: 90vh;
-  /* background: red; */
+  height: 50vh;
+  background-image: url('../images/left_back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Left Image Start */
-.leftside{
-  width: 80%;
-  height: 500px;
-  /* background: blue; */
-  margin-left: 20%;
-  margin-top: 5%;
+
+.container1{
+   width:100%;
+}
+
+/* Top Part Start */
+.mission{
+   width:100%;
+   height:auto;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+}
+.mission .left{
+   width: 50%;
+   margin-top: 5%;
+   padding-left: 10%;
+}
+.mission .left h1{
+  font-size: 48px;
+  font-weight: bold;
+  color: #494949;
+}
+.mission .left h2{
+  font-size: 26px;
+  color: #834655;
+}
+.mission .left .tour{
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
-
-.leftside h1{
-  font-size: 45px;
-  margin-left: 10%;
-  margin-top: 5%;
-  color: #2F327D;
-}
-
-.leftside h3{
-  font-size: 24px;
-  margin-left: 10%;
-  margin-top: 0;
-  color: #18191F;
-}
-
-.leftside h2{
+.mission .left .tour h3{
   font-size: 22px;
-  margin-left: 10%;
-  margin-top: 8%;
   color: #E77E83;
+  margin-top: 10%;
 }
-
-.leftside i{
-  font-size: 40px;
-  margin-left: 5%;
-  margin-top: 6%;
+.mission .left .tour i{
+  font-size: 48px;
   color: #E77E83;
+  margin: 8% 5%;
   cursor: pointer;
 }
 
-.leftside p{
-  font-size: 22px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
+.mission .right{
+   width: 50%;
+   margin-top: 5%;
+}
+.mission .right p{
   color: #696984;
+   font-size: 20px;
+   width:80%;
+   line-height: 198%;
+   letter-spacing: 2%;
 }
 
-.leftside .btn{
-  width: 70%;
-  height: 50px;
-  border-radius: 25px;
-  color: #FFFFFF;
-  font-size: 18px;
-  background: #61C0BF;
+.mission .right input{
+    padding: 15px;
+    border: 1px solid #9F5069;
+    border-radius: 35px;
+    margin-top: 5%;
+    box-sizing: border-box;
+    font-size: 18px;
+    background: #9F5069;
+    color: #FFFFFF;
+    width: 40%;
+}
+
+/* Buttons Start*/
+.mission .right .action-button:hover, .mission .right .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #E77E83;
+}
+/* Button End */
+
+/* Top Part End */
+
+/* Mid Part Start */
+
+.mission1{
+   width:100%;
+   height:auto;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   margin: 5% 0;
+}
+
+.mission1 .left{
+   float:left;
+   width: 50%;
+   display:inline-block;
+}
+.mission1 .left h3{
+   width: 40%;
+   margin-left: 20%;
+   font-weight: bold;
+   font-size: 32px;
+   color: #55578D;
+}
+.mission1 .left img{
+    height: 350px;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 15px;
+}
+.mission1 .left p{
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 20px;
+    color: #5F5F7E;
+}
+
+.mission1 .right{
+   width: 40%;
+   height: 500px;
+   display:inline-block;
+   border: 0 none;
+   border-radius: 10px;
+   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.05);
+   margin-top: 6%;
+}
+
+.mission1 .right iframe{
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+  border-radius: 10px;
+}
+/* Mid Part End */
+
+
+/* Review Part Start */
+
+.reviews{
+   width:100%;
+   height:auto;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   margin: 5% 0;
+}
+.reviews .left{
+   width: 30%;
+   /* margin-top: 5%; */
+   padding-left: 10%;
+}
+.reviews .left h1{
+  font-size: 48px;
+  font-weight: bold;
+  color: #494949;
+}
+.reviews .left h3{
+  font-size: 20px;
+  color: #525596;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+.reviews .left h3 span{
+  background: #FFFFFF;
+  padding-left: 2%;
+}
+.reviews .left h3::before{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #525596;
+  position: absolute;
+  margin-top: 10px;
+  z-index: -2;
+}
+
+.reviews .right{
+   width: 50%;
+   /* margin-top: 5%; */
+   margin-left: 15%;
+}
+.reviews .right p{
+  color: #696984;
+   font-size: 20px;
+   width:80%;
+   line-height: 198%;
+   letter-spacing: 2%;
+}
+.reviews .right .tour{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.reviews .right .tour h3{
+  font-size: 22px;
+  color: #E77E83;
   margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+}
+.reviews .right .tour i{
+  font-size: 48px;
+  color: #E77E83;
+  margin: 4% 5%;
   cursor: pointer;
 }
 
-/* Left Image End */
+/* Review Part End */
 
-/* Right Image Start */
-
-.rightside{
-  width: 60%;
-  height: 500px;
-  background-image: url('../images/left_back.png');
-  background-size: cover;
-  margin-top: 6%;
-  margin-left: 5%;
-  border-radius: 15px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-/* Right Image End */
-
-
-/* Down Part Start */
-.sect1{
-  width: 100%;
-  height: 80vh;
-  /* background: red; */
+.clear{
+    clear: both;
 }
 
 
-.downleftside{
-  width: 80%;
-  height: 500px;
-  /* background: blue; */
-  margin-left: 20%;
-  margin-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
+/* Carousel Start */
 
-.downleftside h1{
-  font-size: 45px;
-  margin-left: 10%;
-  margin-top: 5%;
-  color: #2F327D;
-}
 
-.downleftside .clinic{
-  width: 70%;
-  height: 300px;
-  background-image: url('../images/left_back.png');
-  background-size: cover;
-  margin-top: 5%;
-  margin-left: 10%;
-  border-radius: 15px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
+/* Carousel End */
 
-.downleftside p{
-  width: 60%;
-  font-size: 22px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  color: #696984;
-}
-/* Left Image End */
-
-/* Down Right Map Start */
-
-.downrightside{
-  width: 80%;
-  height: 430px;
-  margin-top: 15%;
-  margin-left: 5%;
-  border-radius: 15px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-.downrightside iframe{
-  width: 100%;
-}
-/* Down Right Map End */
-
-/* Down Part End */
-
+/* media */
 
 /* Mobile View Starts */
 @media screen and (max-width:1024px){
@@ -234,118 +306,146 @@ body{
     width: 100%;
     height: 100%;
   }
-  .sect{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden !important;
-    /* padding-top: 30%; */
+}
+
+
+@media(max-width:1200px){
+  .mission .right input{
+      width: 60%;
   }
-  .leftside{
-    width: 100%;
-    height: 650px;
-    margin-left: 0;
-    margin-top: 30%;
+}
+
+
+
+@media(max-width:768px){
+  /* Top Part Start */
+  .mission{
+    flex-direction: column;
   }
-  .leftside h1{
+
+  .mission .left{
+    width:100%;
+  }
+  .mission .left h1{
     font-size: 32px;
   }
-  .leftside h3{
+  .mission .left h2{
     font-size: 20px;
   }
-  .leftside p{
-    font-size: 16px;
+  .mission .left .tour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
-  .leftside .btn{
+  .mission .left .tour h3{
+    font-size: 18px;
+    margin-top: 10%;
+  }
+  .mission .left .tour i{
+    font-size: 32px;
+    margin: 8% 5%;
+  }
+
+
+  .mission .right{
+    width:100%;
+  }
+  .mission .right p{
+     font-size: 18px;
+     width:80%;
+     margin-left: 10%;
+  }
+
+  .mission .right input{
+      padding: 15px;
+      margin-top: 5%;
+      font-size: 16px;
+      width: 60%;
+      margin-left: 10%;
+  }
+
+  /* Top Part End */
+
+  /* Mid Part Start */
+  .mission1{
+    flex-direction: column;
+  }
+  .mission1 .left{
+     width: 100%;
+     display:inline-block;
+     margin-top: 10%;
+  }
+  .mission1 .left h3{
+     width: 80%;
+     margin-left: 20%;
+     font-size: 32px;
+     margin-left: 10%;
+  }
+  .mission1 .left img{
+      height: 350px;
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 10%;
+  }
+  .mission1 .left p{
+      width: 80%;
+      margin-left: 10%;
+      font-size: 18px;
+  }
+
+  .mission1 .right{
+     width: 80%;
+     height: 500px;
+     margin-top: 5%;
+     margin-left: 10%;
+  }
+
+  /* Mid Part End */
+
+  /* Review Part Start */
+  .reviews{
+    flex-direction: column;
     margin-top: 10%;
   }
 
-  .rightside{
-    /* width: 90%;
-    margin-left: 5%;
-    margin-top: -50%;
-    background-size: cover; */
-    display: none;
+  .reviews .left{
+     width: 100%;
+     margin-top: 5%;
   }
-
-  .sect1{
-    width: 100%;
-    height: 160vh;
-    overflow: hidden !important;
+  .reviews .left h1{
+      font-size: 32px;
+      width: 80%;
   }
-
-  .downleftside{
-    width: 100%;
-    height: 650px;
-    margin-left: 0;
-  }
-  .downleftside h1{
-    font-size: 32px;
-    margin-left: 30%;
-  }
-  .downleftside p{
-    font-size: 16px;
-  }
-
-  .downrightside{
-    width: 80%;
-    margin-left: 5%;
-    margin-top: -30%;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width:480px){
-  .sect{
-    width: 100%;
-    height: 80vh;
-    padding-left: 5%;
-    overflow: hidden !important;
-    /* padding-top: 30%; */
-  }
-
-  .sect1{
-    width: 100%;
-    height: 140vh;
-    padding-left: 5%;
-    overflow: hidden !important;
-  }
-}
-
-@media screen and (max-width:380px){
-  .sect{
-    width: 100%;
-    height: 90vh;
-    overflow: hidden !important;
-    /* padding-top: 30%; */
-  }
-  .sect1{
-    width: 100%;
-    height: 160vh;
-    overflow: hidden !important;
-  }
-}
-
-@media screen and (max-width:340px){
-  .sect{
-    width: 100%;
-    height: 90vh;
-    overflow: hidden !important;
-    /* padding-top: 30%; */
-  }
-  .leftside h1{
-    font-size: 28px;
-  }
-  .leftside h3{
+  .reviews .left h3{
     font-size: 18px;
-  }
-  .leftside p{
-    font-size: 14px;
+    width: 80%;
   }
 
-  .sect1{
-    padding-left: 5%;
-    width: 100%;
-    height: 180vh;
-    overflow: hidden !important;
+  .reviews .right{
+     width: 100%;
+     margin-left: 0;
   }
+  .reviews .right p{
+    font-size: 16px;
+    width:80%;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  .reviews .right .tour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .reviews .right .tour h3{
+    font-size: 18px;
+    margin-top: 10%;
+  }
+  .reviews .right .tour i{
+    font-size: 32px;
+    margin: 8% 5%;
+  }
+  /* Review Part End */
+
 }

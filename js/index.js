@@ -1,11 +1,15 @@
 setTimeout(function () {
     $('.loader_bg').fadeToggle();
-}, 5000);
+}, 1000);
 
-$(".btn").click(function(){
+$("#tour").click(function(){
+	window.location.href='facilities.html';
+});
+
+$(".next").click(function(){
 	window.location.href='book_appointment.html';
 });
 
-$("#tour").click(function(){
-	window.location.href='#';
+$("#reviewBtn").click(function(){
+	window.location.href='review.html';
 });
