@@ -51,6 +51,18 @@ body {
     font-size: 13px;
 }
 
+#msform select option {
+    color: #696F79;
+    background: #FFFFFF;
+    font-size: 18px;
+}
+
+#msform select option:focus, #msform select option:hover {
+    color: #FFFFFF;
+    background: #E77E83;
+}
+
+
 #msform input:focus, #msform select:focus, #msform textarea:focus {
     /* -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important; */
