@@ -116,32 +116,23 @@
 
                               <label for="time" class="label">Time Slot*</label>
                               <!-- <input type="text" name="time" placeholder="Select a Slot"/> -->
-                              <input type="" name="time" id="time" placeholder="Select a Slot"/>
+                              <!-- <input type="" name="time" id="time" placeholder="Select a Slot"/> -->
+                              <select name="time" id="time">
+                                <option selected disabled value=""> -- select -- </option>
+                                <option disabled value=""> -- Morning -- </option>
+                                <option value="09:30 am - 10:30 am">09:30 am - 10:30 am</option>
+                                <option value="10:30 am - 11:30 am">10:30 am - 11:30 am</option>
+                                <option value="11:30 am - 12:30 pm">11:30 am - 12:30 pm</option>
+                                <option value="12:30 pm - 01:30 pm">12:30 pm - 01:30 pm</option>
+
+                                <option disabled value=""> -- Evening -- </option>
+                                <option value="04:00 pm - 05:00 pm">04:00 pm - 05:00 pm</option>
+                                <option value="05:00 pm - 06:00 pm">05:00 pm - 06:00 pm</option>
+                                <option value="06:00 pm - 07:00 pm">06:00 pm - 07:00 pm</option>
+                                <option value="07:00 pm - 08:00 pm">07:00 pm - 08:00 pm</option>
+                              </select>
                               <span id="error_time" class="text-danger" style=""></span>
 
-                              <div class="time">
-
-                                <div class="row g-0 morningSlot">
-                                    <p class="col-md-2 g-0" id="M1">Morning</p>
-                                    <div class="col-md-5 Mt1">
-                                      <p>08 am - 09 am</p>
-                                    </div>
-                                    <div class="col-md-5 g-0 Mt2">
-                                      <p>09 am - 10 am</p>
-                                    </div>
-                                </div>
-
-                                <div class="row g-0 eveningSlot">
-                                    <p class="col-md-2 g-0" id="E1">Evening</p>
-                                    <div class="col-md-5 g-0 Et1">
-                                      <p>05 pm - 06 pm</p>
-                                    </div>
-                                    <div class="col-md-5 g-0 Et2">
-                                      <p>06 pm - 07 pm</p>
-                                    </div>
-                                </div>
-
-                              </div>
 
                               <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                               <input type="button" id="next2" name="next" class="next action-button" value="Next"/>
