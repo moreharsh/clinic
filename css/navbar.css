@@ -17,6 +17,7 @@
 }
 .header__menu {
     float: right;
+    margin-top: auto;
 }
 .header__el{
     padding: 0 25px;
@@ -26,6 +27,7 @@
   font-size: 18px;
   margin: 0;
   margin-left: 10px;
+  margin-top: -20%;
   display: inline-block;
   line-height: 18px;
   vertical-align: middle;
@@ -90,6 +92,9 @@
   }
   .header__logo{
     padding: 12px 20px 12px 20px;
+  }
+  .header__img{
+    margin-top: 0;
   }
   .header__el {
     display: block;

@@ -100,11 +100,13 @@ body{
 }
 .mission .left h1{
   font-size: 48px;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
   color: #494949;
 }
 .mission .left h2{
   font-size: 26px;
+  font-weight: 350;
   color: #834655;
 }
 .mission .left .tour{
@@ -177,6 +179,7 @@ body{
    margin-left: 20%;
    font-weight: bold;
    font-size: 32px;
+   font-family: 'Nunito Sans', sans-serif;
    color: #55578D;
 }
 .mission1 .left img{
@@ -232,6 +235,7 @@ body{
 .reviews .left h1{
   font-size: 48px;
   font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
   color: #494949;
 }
 .reviews .left h3{
@@ -278,9 +282,9 @@ body{
   margin-top: 5%;
 }
 .reviews .right .tour i{
-  font-size: 48px;
+  font-size: 24px;
   color: #E77E83;
-  margin: 4% 5%;
+  margin: 5% 3%;
   cursor: pointer;
 }
 
@@ -535,8 +539,8 @@ body{
 	position: relative;
 }
 .carousel .cardbox .card .profile .text .testimonial p{
-  letter-spacing: 2px;
   line-height: 198%;
+  font-size: 18px;
 }
 .carousel .cardbox .card .profile .text .testimonial::before {
 	content: "\201C";
@@ -595,6 +599,14 @@ body{
     margin-top: 10%;
   }
 
+  .carousel .cardbox .card .profile .profile_name .name_work{
+  	margin: 5% 0;
+    align-items: center;
+  }
+  .carousel .cardbox .card .profile .profile_name .name_work h2{
+    margin: 5% 0;
+  }
+
   .carousel .cardbox .card .profile .text{
     width: 100%;
   }
@@ -605,7 +617,6 @@ body{
 
   .carousel .cardbox .card .profile .text .testimonial p{
     line-height: 150%;
-    letter-spacing: 1px;
   }
 
 }
