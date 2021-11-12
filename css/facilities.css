@@ -293,8 +293,12 @@ margin-left: 2%;
 .info{
   display: inline-block;
 }
+.info h3 {
+  font-size: 32px;
+}
 .info i{
   padding-top: 7%;
+  font-size: 30px;
 }
 }
 
