@@ -74,7 +74,7 @@ body{
 .banner{
   width: 100%;
   height: 50vh;
-  background-image: url('../images/left_back.png');
+  background-image: url('https://images.unsplash.com/photo-1616391182219-e080b4d1043a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1920&q=60');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,12 +474,12 @@ body{
 }
 
 .carousel .cardbox .card{
-  height: 300px;
+  /* min-height: 300px; */
   color: #696984;
   margin: 20px 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  padding: 0 0;
+  padding: 20px 0;
   background: #FFFFFF;
 }
 
@@ -498,7 +498,8 @@ body{
 .carousel .cardbox .card .profile .profile_name{
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 35%;
+  margin-left: 5%;
   justify-content: center;
   align-items: center;
 }
@@ -532,7 +533,7 @@ body{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 55%;
 }
 .carousel .cardbox .card .profile .text .testimonial {
 	padding: 0 15px 0 60px ;
@@ -586,7 +587,7 @@ body{
     padding: 0 0;
   }
   .carousel .cardbox .card{
-    height: 600px;
+    min-height: 600px;
   }
   .carousel .cardbox .card .profile{
     flex-direction: column;
@@ -597,6 +598,7 @@ body{
     width: 100%;
     height: 30%;
     margin-top: 10%;
+    margin-left: 0;
   }
 
   .carousel .cardbox .card .profile .profile_name .name_work{

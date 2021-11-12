@@ -26,6 +26,7 @@ navText: [
 autoplay: true,
 autoplayTimeout: 5000,
 autoplayHoverPause: true,
+autoHeight:true,
 responsive: {
     0:{
         items: 1
