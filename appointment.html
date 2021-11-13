@@ -188,7 +188,6 @@
             var date = $(".date").val();
             var time = $("#time").val();
 
-            console.log("Clicked");
             $.ajax
             ({
               type: "POST",
@@ -210,7 +209,7 @@
           $('.send').click(function()
           {
             var email = $(".email").val();
-            console.log("Send Clicked");
+            alert("OTP Sent! It may take a minute. Please Wait!");
             $.ajax
             ({
               type: "POST",
@@ -225,11 +224,13 @@
                     var entered_otp = $(".otp").val();
                     if(otp == entered_otp)
                     {
+                      alert( "Verification Successful!" );
                       $(".checkotp").css("display", "none");
                       $(".submit").css("display", "inline");
                     }
                     else {
                       alert( "Entered OTP do not match!" );
+                      entered_otp = "";
                     }
                 });
               }
@@ -240,7 +241,7 @@
           $('.resend').click(function()
           {
             var email = $(".email").val();
-            console.log("Send Clicked");
+            alert("OTP Sent! It may take a minute. Please Wait!");
             $.ajax
             ({
               type: "POST",
@@ -255,11 +256,13 @@
                     var entered_otp = $(".otp").val();
                     if(otp == entered_otp)
                     {
+                      alert( "Verification Successful!" );
                       $(".checkotp").css("display", "none");
                       $(".submit").css("display", "inline");
                     }
                     else {
                       alert( "Entered OTP do not match!" );
+                      entered_otp = "";
                     }
                 });
               }
