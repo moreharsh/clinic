@@ -2,15 +2,15 @@
 
 
 $fullname = $_POST['fullname'];
-$phone = $_POST['phone'];
-$address = $_POST['address'];
+$message = $_POST['message'];
+$rating = $_POST['whatever1'];
 
-if(!empty($fullname) || !empty($phone) || !empty($address) ) {
+if(!empty($fullname) || !empty($message)  || !empty($rating)) {
 
     $host = "localhost";
-    $dbUsername = "aligndentalstudio1";
+    $dbUsername = "aligndentalstudio2";
     $password = "Align@1411";
-    $dbname = "phone_appointment";
+    $dbname = "align_review";
 
     $conn = new mysqli($host, $dbUsername, $password, $dbname);
 
@@ -18,25 +18,25 @@ if(!empty($fullname) || !empty($phone) || !empty($address) ) {
       die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
     } else {
 
-        $SELECT = "SELECT phone FROM phone_appointment WHERE phone = ?";
-        $INSERT = "INSERT INTO phone_appointment (fullname, phone, address) values (?, ?, ?)";
+        $SELECT = "SELECT fullname FROM review WHERE fullname = ?";
+        $INSERT = "INSERT INTO review (fullname, message, rating) values (?, ?, ?)";
 
         $stmt = $conn->prepare($SELECT);
-        $stmt->bind_param("s",$phone);
+        $stmt->bind_param("s",$fullname);
         $stmt->execute();
-        $stmt->bind_result($phone);
+        $stmt->bind_result($fullname);
         $stmt->store_result();
         $rnum = $stmt->num_rows;
 
-        if($rnum <= 1) {
+        if($rnum <= 5) {
           $stmt->close();
 
           $stmt = $conn->prepare($INSERT);
-          $stmt->bind_param("sss",$fullname,$phone,$address);
+          $stmt->bind_param("sss",$fullname,$message,$rating);
           $stmt->execute();
-          header("Location: appointment_confirm.html");
+          header("Location: index.html");
         } else {
-          echo "Appointment Already Booked <br>";
+          echo "Something went Wrong! <br>";
         }
         $stmt->close();
         $conn->close();

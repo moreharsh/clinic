@@ -79,6 +79,10 @@ body {
   display: none;
 }
 
+.submit{
+  display: none;
+}
+
 .label{
   color: #696F79;
   display: flex;
@@ -107,7 +111,7 @@ body {
 
 
 /*buttons*/
-#msform .send, #msform .resend, #msform .action-button {
+#msform .send, #msform .resend, #msform .checkotp, #msform .action-button {
     width: 100px;
     background: transparent;
     font-weight: bold;

@@ -5,9 +5,9 @@
   $time = $_POST['time'];
 
   $host = "localhost";
-  $dbUsername = "root";
-  $password = "";
-  $dbname = "appointment";
+  $dbUsername = "aligndentalstudio";
+  $password = "Align@1411";
+  $dbname = "align_appointment";
 
   $conn = new mysqli($host, $dbUsername, $password, $dbname);
 

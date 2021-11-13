@@ -151,6 +151,7 @@
 
                               <input type="button" name="send" class="send" value="Send"/>
                               <input type="button" name="resend" class="resend" value="Resend"/>
+                              <input type="button" name="checkotp" class="checkotp" value="Check OTP"/>
                               <input type="submit" name="submit" id="btn_contact_details" class="submit action-button" value="Submit"/>
                           </fieldset>
                       </form>
@@ -189,6 +190,67 @@
             });
             return false;
           });
+
+          $('.send').click(function()
+          {
+            var email = $(".email").val();
+            console.log("Send Clicked");
+            $.ajax
+            ({
+              type: "POST",
+              url: "send.php",
+              dataType: "json",
+              data: {email:email},
+              success: function(msg)
+              {
+                var otp = msg.otp;
+                $('.checkotp').click(function()
+                {
+                    var entered_otp = $(".otp").val();
+                    if(otp == entered_otp)
+                    {
+                      $(".checkotp").css("display", "none");
+                      $(".submit").css("display", "inline");
+                    }
+                    else {
+                      alert( "Entered OTP do not match!" );
+                    }
+                });
+              }
+            });
+            return false;
+          });
+
+          $('.resend').click(function()
+          {
+            var email = $(".email").val();
+            console.log("Send Clicked");
+            $.ajax
+            ({
+              type: "POST",
+              url: "send.php",
+              dataType: "json",
+              data: {email:email},
+              success: function(msg)
+              {
+                var otp = msg.otp;
+                $('.checkotp').click(function()
+                {
+                    var entered_otp = $(".otp").val();
+                    if(otp == entered_otp)
+                    {
+                      $(".checkotp").css("display", "none");
+                      $(".submit").css("display", "inline");
+                    }
+                    else {
+                      alert( "Entered OTP do not match!" );
+                    }
+                });
+              }
+            });
+            return false;
+          });
+
           </script>
 
           <!-- Slot management code End  -->
