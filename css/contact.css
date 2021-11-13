@@ -66,13 +66,13 @@ body{
    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.05);
    box-sizing: border-box;
    font-weight: bold;
-   padding: 5% 0;
+   padding: 3% 0;
    line-height: 180%;
 }
 
 .mission .right .address{
   display: flex;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 .mission .right .mail{
