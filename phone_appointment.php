@@ -36,7 +36,9 @@ if(!empty($fullname) || !empty($phone) || !empty($address) ) {
           $stmt->execute();
           header("Location: appointment_confirm.html");
         } else {
-          echo "Appointment Already Booked <br>";
+          echo '<script language="javascript">';
+          echo 'alert("Thank You Contacting Us We Will Response You As Early Possible")';
+          echo '</script>';
         }
         $stmt->close();
         $conn->close();
