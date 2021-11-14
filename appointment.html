@@ -270,6 +270,26 @@
             return false;
           });
 
+          $('.btn_contact_details').click(function()
+          {
+            var email = $(".email").val();
+            var date = $(".date").val();
+            var time = $("#time").val();
+
+            $.ajax
+            ({
+              type: "POST",
+              url: "send_mail.php",
+              dataType: "json",
+              data: {date:date,time:time,email:email},
+              success: function(msg)
+              {
+                var temp = msg.otp;
+              }
+            });
+            return false;
+          });
+
           </script>
 
           <!-- Slot management code End  -->
