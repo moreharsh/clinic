@@ -39,6 +39,7 @@ if(!empty($fullname) || !empty($phone) || !empty($address) ) {
           echo '<script language="javascript">';
           echo 'alert("Thank You Contacting Us We Will Response You As Early Possible")';
           echo '</script>';
+          header("Location: index.html");
         }
         $stmt->close();
         $conn->close();
